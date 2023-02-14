@@ -28,9 +28,9 @@ export default function Home() {
           <h1 className="text-black text-5xl text-center">Linear Regression </h1>
           <div className="flex justify-center space-x-5 h-14 items-center">
             <label className="text-black">รับข้อมูลความชื้น</label>
-            <input type="number" className="outline-none  h-full pl-4 bg-gray[50] rounded-xl w-[30rem]" onChange={(e) => setTemp(e.target.value)} />
+            <input type="number" className="outline-none  h-full pl-4 bg-gray[50] rounded-xl w-[30rem]" onChange={(e) => setHumidity(e.target.value)} />
             <label className="text-black">รับข้อมูลอุณหภูมิ</label>
-            <input type="number" className="outline-none h-full pl-4 bg-gray[50] rounded-xl w-[30rem]" onChange={(e) => setHumidity(e.target.value)} />\
+            <input type="number" className="outline-none h-full pl-4 bg-gray[50] rounded-xl w-[30rem]" onChange={(e) => setTemp(e.target.value)} />\
           </div>
           <div className="flex justify-center items-center flex-col space-y-10">
             <button className='bg-sky-500 text-black h-10 w-16 rounded-xl' onClick={() => submit()}>Submit</button>
